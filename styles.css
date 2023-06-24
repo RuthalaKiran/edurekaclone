@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+.header{
+    background-color: blueviolet;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo-edureka{
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo-edureka a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    font-weight: 800;
+}
+.logo-edureka input{
+    margin-left: 20px;
+    width:500px;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    
+}
+::placeholder{
+    color:rgb(142, 153, 161,0.5);
+}
+ .logo-edureka span{
+    background-color: red;
+    width: 60px;
+    height: 40px;
+ }
+ .logo-edureka span i{
+    color: white;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 5px;
+ }
+ .navbar{
+    margin-right: 50px;
+    margin-bottom: 18px;
+ }
+ .navbar nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+ }
+ .drop{
+    position: relative;
+    top: 3px;
+   
+ }
+
+ .bxs-user-circle{
+    font-size: 40px;
+    margin-left: 3px;
+    position: relative;
+    top:10px;
+    color:rgb(14, 229, 229,0.9);
+ }
+
+
+ /* -------course names-------- */
+ .course-name{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    
+ }
+ .course-name .items{
+   padding:5px;
+ }
+ .course-name .items:hover{
+   /* border: 1px solid yellow; */
+   background-color: rgb(222, 181, 181,0.5);
+   border-radius: 20px;
+ }
+ .course-name .course a{
+   text-decoration: none;
+ }
+ .bx-menu{
+    font-size: 30px;
+ }
+ .back-img{
+   width: 100%;
+
+ }
+ .back-img img{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+ }
+ /* .back-img span::before{
+    content: " ";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(192, 36, 36);
+    position:absolute;
+    left:100px;
+    top: 40%;
+ } */
+.back-img .downs{
+    display: flex;
+    justify-content: space-between;
+}
+.back-img .downs .down-left{
+    position: relative;
+    bottom: 230px;
+    left: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+.back-img .downs .down-right{
+    position: relative;
+    bottom: 230px;
+    right: 100px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+    width: 55px;
+    height: 55px;
+}
+.down-left i{
+   transform: rotate(90deg);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+    position: relative;
+    left: -4px;
+    bottom: 2px;
+}
+.down-right i{
+    transform: rotate(270deg);
+    text-align: center;
+    font-size: 40px; 
+    position: relative;
+    left: -4px;
+    bottom: 2px;
+ }
+
+ /* ------------card component------------- */
+ .cards{
+    display:flex ;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    bottom:100px;
+   
+ }
+ .cards .card1{
+   background-color: white;
+   padding: 10px 30px;
+   width: 360px;
+   height: 85px;
+   box-shadow: 0 0 10px rgb(108, 89, 89,0.5) ,0 0 30px rgb(83, 79, 72,0.2);
+   text-transform: uppercase;
+ }
+ .card1 div{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 7px;
+ }
+.card1 a{
+   text-decoration: none;
+}
+.card1 a i{
+   transform: rotate(270deg);
+}
+
+/* ---------trending-course------- */
+.trending-course{
+   max-width: 1305px;
+   height: 2340px;
+   /* background-color: rgb(220, 195, 195); */
+   margin-left: 108px;
+}
+.trending-course-name{
+  position: relative;
+  top: 10px;
+ display: flex;
+ justify-content: space-around;
+}
+.trending-course-name .course{
+   font-size: 20px;
+}
+
+.trending-course-cards{
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+.trending-course-cards div{
+   flex-basis: 20%;
+   background-color: white;
+   box-shadow: 0 0 10px rgb(108, 89, 89,0.5) ,0 0 30px rgb(83, 79, 72,0.2);
+   width: 100px;
+   height:280px;
+   margin: 10px 30px;
+   transition: .8s;
+}
+
+
+.trending-course-cards div:hover{
+   transform: translateY(-10px);
+}
+
+
+
+.box h3{
+   width: 100%;
+   height: 120px;
+   background:linear-gradient(to left,rgba(116, 116, 248, 0.9),rgba(49, 219, 66, 0.6));
+   text-align: center;
+   padding-top: 30px;
+   color:white;
+}
+.box pre{
+   margin-top: 20px;
+   margin-left: 10px;
+   font-weight: 600;
+}
+.box small{
+   font-family:'Times New Roman', Times, serif;
+   padding: 30px;
+   position:relative;
+   top: 15px;
+   font-size: 16px;
+}
+.box ul{
+   list-style: none;
+   display: flex;
+   
+   padding: 20px;
+}
+.box ul li{
+   margin-left: 5px;
+   color:red;
+   font-size: 20px;
+}
+.box ul span{
+   color: black;
+   font-size:16px ;
+   margin-left: 10px;
+   
+}
+
+/* -----------Career Related -------- */
+.brouse-courses{
+   text-align: center;
+   margin: 40px;
+}
+.brouse-courses a{
+   text-decoration: none;
+   padding: 10px 40px;
+   color: white;
+   background:linear-gradient(to left,rgb(8, 174, 229),rgb(149, 61, 231));
+   margin-bottom: 10px;
+   border-radius: 5px;
+}
+.brouse-courses p{
+   margin-top: 20px;
+   font-size: 20px;
+   font-family: monospace;
+}
+.hello{
+  
+   padding-top: 20px;
+}
+
+ /* Discover Top Categories */
+.discover{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+}
+.discover .cour1{
+   background-color: aqua;
+   box-shadow: 0 0 10px rgb(108, 89, 89,0.5) ,0 0 30px rgb(83, 79, 72,0.2);
+   width: 200px;
+   height: 150px;
+   flex-basis: 10%;
+   padding: 10px 20px;
+   transition: .4s;
+}
+
+.discover .cour1:hover{
+   box-shadow: 0px 5px 10px blue;
+   transform: translateY(-10px);
+}
+
+
+
+
+.discover .cour1 a{
+   text-decoration: none;
+   text-align: center
+}
+.discover .cour1 a pre{
+   font-size: 13px;
+   font-weight: 600;
+   text-align:center;
+}
+.discover .cour1 .img-afile,.img-aglobe{
+   width: 40%;
+   margin-left: 30px;
+   margin-bottom: 15px;
+}
+.discover .cour1 .img-acloud,
+.img-ainfinity,
+.img-ablub,
+.img-acyber,
+.img-adata{
+   width: 60%;
+   margin-left: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.know-more{
+   margin: 40px;
+   text-align: center;
+}
+.know-more a{
+   text-decoration: currentColor;
+}
+.know-more a i{
+   transform: rotate(270deg);
+   font-size: 18px;
+   position: relative;
+   top: 2px;
+   left: -6px;
+}
+
+/* Reviews */
+
+.Reviews-col{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20px;
+
+}
+.Reviews-col .Reviews-col3{
+   flex-basis: 30%;
+   /* background-color: red; */
+   box-shadow: 0 0 10px rgb(108, 89, 89,0.5) ,0 0 30px rgb(83, 79, 72,0.2);
+   padding: 25px 20px;
+   transition: 1s;
+}
+
+
+.Reviews-col .Reviews-col3:hover{
+ background-color: rgb(33, 229, 147);
+}
+
+.Reviews-col .Reviews-col3:hover .Reviews-col1-1 pre{
+   color: black;
+}
+
+
+.Reviews-col .Reviews-col3 .Reviews-col1-1{
+   display: flex;
+}
+.Reviews-col1-1 h1{
+   color: white;
+   width: 60px;
+   background-color: grey;
+   border-radius: 50%;
+   height: 60px;
+   text-align:center;
+   margin-top: 5px;
+}
+.Reviews-col1-1 pre{
+   font-weight: 700;
+   color: rgb(128, 4, 245);
+  padding-top: 5px;
+  transition: 0.4s;
+  font-size: 25px;
+}
+.Reviews-col3 span{
+   font-size: 15px;
+   font-family:monospace;
+   position: relative;
+   top:-20px;
+   left: 80px;
+   
+}
+.review-matter ul{
+list-style: none;
+display: flex;
+
+}
+.review-matter ul li{
+   margin-right: 10px;
+   color: orange;
+}
+.review-matter p{
+   font-size: 14px;
+   font-family:cursive;
+   margin-right:0px;
+   color: brown;
+}
+/* enroll */
+.enrol{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   background:linear-gradient(to left,blueviolet,rgb(101, 185, 213));
+   width: 100%;
+   height: 90px;
+   margin-top: 10px;
+}
+.enrol h3{
+   color: white;
+   font-size: 22px;
+   font-family: sans-serif;
+}
+.enrol a{
+   text-decoration: none;
+   font-size: 18px;
+   background-color: white;
+   color: blue;
+   padding: 10px 20px;
+   border-radius: 5px;
+   position:relative;
+   right: 130px;
+}
+/* The-Edureka-Edge */
+.The-Edureka-Edge{
+   margin-top: 10px;
+   height: 500px;
+}
+.The-Edureka-Edge .edureka-edge{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 40px;
+}
+.The-Edureka-Edge .edureka-edge-col{
+   flex-basis: 20%;
+   /* background-color: red; */
+   width: 100px;
+   height:170px ;
+}
+.The-Edureka-Edge .edureka-edge img{
+   width: 30%;
+   margin-left: 80px;
+   margin-bottom: 20px;
+   margin-top: 10px;
+}
+.The-Edureka-Edge .edureka-edge h4,p{
+   text-align: center;
+}
+.The-Edureka-Edge .edureka-edge h1{
+   font-size: 50px;
+   margin: 20px 80px;
+}
+
+
+
+/* Our Corporate Clients */
+.corporate-clients{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 90px;
+}
+.corporate-clients div img{
+ width: 50%;
+ margin-top: 10px;
+}
+.corporate-clients div pre{
+   margin-top: 25px;
+}
+.cococola{
+   width: 200%;
+   height: 60%;
+   margin-top: 15px;
+}
+.corporate-clients div{
+   width: 150px;
+   height: 100px;
+   /* background-color: red; */
+   text-align: center;
+   
+}
+hr{
+   width: 100%;
+   border: 2px solid black;
+   margin-top: 40px;
+}
+/* footer */
+footer{
+   height:300px;
+}
+footer h1{
+   margin: 50px 10px 10px 250px;
+   font-size: 80px;
+   font-family:cursive;
+   color: blueviolet;
+}
+footer h2{
+   text-align: center;
+   font-size: 100px;
+   margin-left: 500px;
+   color: white;
+   text-shadow: 0px 0px 5px red, 0px 0px 10px blue;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
